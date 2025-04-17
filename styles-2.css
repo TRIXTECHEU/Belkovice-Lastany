@@ -261,5 +261,5 @@ button.vfrc-button[label="Cancel"]::before {
 }
 
 .vfrc-chat .vfrc-message p {
-  text-align: right !important;
+  text-align: left !important;
 }
