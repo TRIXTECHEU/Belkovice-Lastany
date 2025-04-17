@@ -19,7 +19,7 @@
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-color: transparent !important;
-  }
+}
 
   .vfrc-chat__dialog {
     background-image: url('https://i.imgur.com/mVJN1O1.jpeg') !important;
@@ -27,7 +27,7 @@
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-color: transparent !important;
-  }
+}
   
 button.vfrc-button[label="Start new chat"],
 button.vfrc-button[label="Cancel"] {
@@ -68,18 +68,15 @@ button.vfrc-button[label="Cancel"]::before {
   white-space: nowrap !important;
 }
 
-/* Skryje původní text */
 #vfrc-start-chat {
   color: transparent !important;
   position: relative !important;
 }
 
-/* Skryje vnitřní <span> pokud existuje – bezpečně */
 #vfrc-start-chat span {
   display: none !important;
 }
 
-/* Přidá vlastní text */
 #vfrc-start-chat::before {
   content: "Spustit nový chat" !important;
   position: absolute !important;
@@ -93,7 +90,6 @@ button.vfrc-button[label="Cancel"]::before {
   pointer-events: none !important;
   white-space: nowrap !important;
 }
-
 
 @media (min-width: 768px) {
     .jyiuei6 > button:last-of-type::before {
@@ -133,8 +129,6 @@ button.vfrc-button[label="Cancel"]::before {
       filter: brightness(1);
     }
     
-    
-    
     .jyiuei6 > button:last-of-type::before {
       content: "";
       display: inline-block;
@@ -147,7 +141,6 @@ button.vfrc-button[label="Cancel"]::before {
       filter: brightness(0.9);
       transform: scale(1.3)
     }
-    
     
     .jyiuei6 > button:last-of-type:hover::before {
       transform: scale(1.5);
@@ -186,8 +179,7 @@ button.vfrc-button[label="Cancel"]::before {
     overflow: hidden;
     -webkit-user-drag: none !important;
     pointer-events: none !important;
-  }
-  
+}
 
 .dio4eo3 {
     background-color: rgba(255, 255, 255, 0) !important;
@@ -202,7 +194,6 @@ button.vfrc-button[label="Cancel"]::before {
     color: #656d75 !important;
 }
 
-
 .vfrc-avatar {
   background-color: transparent !important;
 }
@@ -212,18 +203,15 @@ button.vfrc-button[label="Cancel"]::before {
   border: none !important;
 }
 
-
-/* Skryje původní obsah elementu, pokud je generován textově */
 .ticwq62 {
-  font-size: 0 !important; /* skryje veškerý vnitřní text */
+  font-size: 0 !important;
   position: relative;
   background-color: transparent;
 }
 
-/* Přidá nový obsah */
 .ticwq62::before {
   content: "Chat byl ukončen" !important;
-  color: #656d75; /* nastav barvu, jakou chceš */
+  color: #656d75;
   position: relative;
   font-size: 11.5px !important;
 
