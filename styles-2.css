@@ -1,6 +1,6 @@
 /* TrixTech s.r.o. @2025 */
 
-.fptyqm0.fptyqm1.jyiuei4.jyiuei5 {
+.fptyqm0, .fptyqm1, .jyiuei4, .jyiuei5 {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -250,6 +250,6 @@ button.vfrc-button[label="Cancel"]::before {
     font-size: 11.5px !important;
 }
 
-._11kfxpg7 .knxm730 .vfrc-user-response ._15emaa42 .vfrc-chat .vfrc-message p {
+._11kfxpg7, .knxm730, .vfrc-user-response, ._15emaa42, .vfrc-chat, .vfrc-message p {
     text-align: left !important;
 }
