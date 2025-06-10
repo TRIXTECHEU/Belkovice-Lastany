@@ -4,7 +4,6 @@ div[class*="vfrc-header"] img.vfrc-avatar {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    background-image: url('https://i.imgur.com/E7uv2fQ.png') !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: 0 !important;
