@@ -13,7 +13,7 @@ div[class*="vfrc-header"] img.vfrc-avatar {
   pointer-events: none !important;
   user-select: none !important;
   -webkit-user-drag: none !important;
-  transform: none !important;
+  transform: translate(-2%, 0%) !important;
 }
 
 .vfrc-chat, .s9t60i1 {
