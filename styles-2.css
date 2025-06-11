@@ -1,18 +1,19 @@
 /* TrixTech s.r.o. @2025 */
 
 div[class*="vfrc-header"] img.vfrc-avatar {
-    display: block !important;
-    justify-content: center !important;
-    align-items: center !important;
-    background-size: contain !important;
-    border-radius: 0% !important;
-    background-repeat: no-repeat !important;
-    background-position: 0 !important;
-    transform: translate(-3.5%, 0%) !important;
-    width: 280px !important;
-    height: 50px !important;
-    font-size: 0px !important;
-    color: transparent !important;
+  display: block !important;
+  width: 280px !important;
+  height: 50px !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  border-radius: 0% !important;
+  font-size: 0 !important;
+  color: transparent !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  transform: none !important;
 }
 
 .vfrc-chat, .s9t60i1 {
@@ -93,8 +94,12 @@ button.vfrc-button[label="Cancel"]::before {
   white-space: nowrap !important;
 }
 
-@media (min-width: 768px) {
-    .jyiuei6 > button:last-of-type::before {
+.vfrc-icon._1t7e06e0 svg {
+    display: none !important;
+  }  
+
+  @media (min-width: 768px) {
+    .vfrc-icon._1t7e06e0::before {
       content: "";
       display: inline-block;
       width: 24px;
@@ -105,49 +110,236 @@ button.vfrc-button[label="Cancel"]::before {
       transition: transform 0.6s ease, filter 0.8s ease;
       filter: brightness(0.9);
     }
-    
-    .jyiuei6 > button:last-of-type:hover::before {
+  
+    .vfrc-icon._1t7e06e0:hover::before {
       transform: rotate(180deg) scale(1.2);
       filter: brightness(1);
     }
- }
+  }
+  
+  
+@media (min-width: 768px) {
+  .vfrc-icon._1t7e06e0::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://i.imgur.com/SuOgKWC.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.8s ease;
+    filter: brightness(0.9);
+  }
 
+  .vfrc-icon._1t7e06e0:hover::before {
+    transform: rotate(180deg) scale(1.2);
+    filter: brightness(1);
+  }
+}
+
+.vfrc-icon._1t7e06e0 svg {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .vfrc-header button:nth-of-type(1) .vfrc-icon._1t7e06e0::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://i.imgur.com/SuOgKWC.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.8s ease;
+    filter: brightness(0.9);
+  }
+
+  .vfrc-header button:nth-of-type(1) .vfrc-icon._1t7e06e0:hover::before {
+    transform: rotate(180deg) scale(1.2);
+    filter: brightness(1);
+  }
+
+  .vfrc-header button:nth-of-type(2) .vfrc-icon._1t7e06e0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .vfrc-header button:nth-of-type(2) .vfrc-icon._1t7e06e0::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://i.imgur.com/rLEQIrb.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.8s ease;
+    filter: brightness(0.9);
+  }
+
+  .vfrc-header button:nth-of-type(2) .vfrc-icon._1t7e06e0:hover::before {
+    transform: scale(1.2);
+    filter: brightness(1);
+  }
+}
 
 @media (max-width: 767px) {
-    .jyiuei6 > button:first-of-type::before {
+  .vfrc-header button:nth-of-type(1) .vfrc-icon._1t7e06e0::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://i.imgur.com/SuOgKWC.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.8s ease;
+    filter: brightness(0.9);
+  }
+
+  .vfrc-header button:nth-of-type(1) .vfrc-icon._1t7e06e0:hover::before {
+    transform: rotate(180deg) scale(1.2);
+    filter: brightness(1);
+  }
+
+  .vfrc-header button:nth-of-type(2) .vfrc-icon._1t7e06e0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .vfrc-header button:nth-of-type(2) .vfrc-icon._1t7e06e0::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://i.imgur.com/rLEQIrb.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.8s ease;
+    filter: brightness(0.9);
+  }
+
+  .vfrc-header button:nth-of-type(2) .vfrc-icon._1t7e06e0:hover::before {
+    transform: scale(1.2);
+    filter: brightness(1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .vfrc-header button:nth-of-type(1) .vfrc-icon._1t7e06e0::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://i.imgur.com/SuOgKWC.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.8s ease;
+    filter: brightness(0.9);
+  }
+
+  .vfrc-header button:nth-of-type(1) .vfrc-icon._1t7e06e0:hover::before {
+    transform: rotate(180deg) scale(1.2);
+    filter: brightness(1);
+  }
+
+  .vfrc-header button:nth-of-type(2) .vfrc-icon._1t7e06e0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .vfrc-header button:nth-of-type(2) .vfrc-icon._1t7e06e0::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://i.imgur.com/rLEQIrb.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.8s ease;
+    filter: brightness(0.9);
+  }
+
+  .vfrc-header button:nth-of-type(2) .vfrc-icon._1t7e06e0:hover::before {
+    transform: scale(1.2);
+    filter: brightness(1);
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .vfrc-icon._1t7e06e0::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://i.imgur.com/SuOgKWC.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.8s ease;
+    filter: brightness(0.9);
+  }
+
+  .vfrc-icon._1t7e06e0:hover::before {
+    transform: rotate(180deg) scale(1.2);
+    filter: brightness(1);
+  }
+}
+
+@media (min-width: 1200px) {
+  .vfrc-icon._1t7e06e0::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://i.imgur.com/SuOgKWC.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.8s ease;
+    filter: brightness(0.9);
+  }
+
+  .vfrc-icon._1t7e06e0:hover::before {
+    transform: rotate(180deg) scale(1.2);
+    filter: brightness(1);
+  }
+
+  @media (min-width: 1440px) {
+    .vfrc-icon._1t7e06e0::before {
       content: "";
       display: inline-block;
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
       background-image: url('https://i.imgur.com/SuOgKWC.png');
       background-size: cover;
       background-position: center;
       transition: transform 0.6s ease, filter 0.8s ease;
       filter: brightness(0.9);
     }
-    
-    .jyiuei6 > button:first-of-type:hover::before {
+
+    .vfrc-icon._1t7e06e0:hover::before {
       transform: rotate(180deg) scale(1.2);
       filter: brightness(1);
     }
-    
-    .jyiuei6 > button:last-of-type::before {
-      content: "";
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      background-image: url('https://i.imgur.com/rLEQIrb.png'); 
-      background-size: cover;
-      background-position: center;
-      transition: transform 0.6s ease, filter 0.8s ease;
-      filter: brightness(0.9);
-      transform: scale(1.3)
-    }
-    
-    .jyiuei6 > button:last-of-type:hover::before {
-      transform: scale(1.5);
-      filter: brightness(1);
-    }
+  }
+
+  ._1q15b0b1 {
+    font-weight: 500 !important;
+    transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+    font-size: 14px !important;
+  }
+
+  ._1q15b0b1:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px) !important;
+  }
 }
 
 .jsli365 {
@@ -223,17 +415,6 @@ button.vfrc-button[label="Cancel"]::before {
     font-size: 14px !important;
     -webkit-user-drag: none !important;
     pointer-events: none !important;
-}
-
-._1q15b0b1 {
-  font-weight: 500 !important;
-  transition: transform 0.4s ease, box-shadow 0.4s ease !important;
-  font-size: 13px !important;
-}
-
-._1q15b0b1:hover {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15) !important;
-  transform: translateY(-2px) !important;
 }
 
 ._15s29m9a {
