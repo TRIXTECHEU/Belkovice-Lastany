@@ -94,11 +94,11 @@ button.vfrc-button[label="Cancel"]::before {
   white-space: nowrap !important;
 }
 
-.vfrc-icon._1t7e06e0 svg {
+.vfrc-header .vfrc-icon._1t7e06e0 svg {
   display: none !important;
 }
 
-.vfrc-icon._1t7e06e0::before {
+.vfrc-header .vfrc-icon._1t7e06e0::before {
   content: "";
   display: block;
   position: absolute;
